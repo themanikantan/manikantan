@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Mani</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
+    <link rel="stylesheet" href="https://use.typekit.net/auy7uxg.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+
+
+    <style>
+        body {
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 2;
+
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 16px;
+
+
+        }
+
+
+        h4 {
+
+            font-size: 12px;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #676767;
+        }
+
+        .huge {
+            font-size: 55px;
+            color: black;
+        }
+
+
+
+
+        strong {
+            font-weight: bold;
+        }
+
+        .row {
+            text-align: left;
+
+        }
+
+        .imagesize {
+            width: 100%;
+            height: auto;
+        }
+
+        .gifsize {
+            width: 60%;
+            height: 60%;
+        }
+
+
+        . .content {
+            width: 45%;
+            margin: 0 auto;
+            margin-top: 10em;
+            margin-bottom: 10em;
+
+        }
+
+        .quote {
+            font-size: 20px;
+            margin: 2em;
+            font-weight: 400;
+            background: #f9f9f9;
+            border-left: 2px solid black;
+            padding-left: 30px;
+            font-style: italic;
+
+
+        }
+
+        .linethrough {
+            text-decoration: line-through;
+        }
+
+
+
+
+        .lgspacer {
+            padding-top: 5em;
+
+        }
+
+        .smspacer {
+            padding-top: 2em;
+
+        }
+
+        .important {
+            background-color: #F7F7F7;
+            padding: 30px;
+        }
+
+
+
+        .importantclick {
+            background-color: #F7F7F7;
+            padding: 30px;
+            text-align: center;
+            transition: background-color .5s;
+
+        }
+
+        .importantclick:hover {
+            background-color: #DDDDDD;
+            cursor: pointer;
+
+        }
+
+
+        .links {
+            color: #0278C0;
+
+        }
+
+        p i {
+            padding-right: 10px;
+            color: #4d4d4d;
+        }
+
+
+        .darklink {
+            color: #4d4d4d;
+        }
+
+
+        .figcap {
+            padding-top: 10px;
+            font-size: 12px;
+            font-weight: 400;
+            text-align: center;
+            color: dimgrey;
+
+        }
+
+        .topnav {
+            overflow: hidden;
+
+        }
+
+        .topnav a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding-left: 2em;
+            padding-top: 1em;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+
+        ul li {
+            line-height: 35px;
+        }
+
+
+        /*-------- NEXT BUTTOM --------*/
+
+        a {
+            text-decoration: none!important;
+            color: black;
+        }
+
+
+
+        a:hover {
+            text-decoration: none!important;
+            color: black;
+        }
+
+
+
+
+        /*-------- FOOTER ICON BAR --------*/
+
+        .icon {
+            font-size: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+
+
+        .iconbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+        }
+
+        .iconbar i {
+            color: black;
+            transition: color .5s;
+        }
+
+        .iconbar i:hover {
+            color: darkgrey;
+        }
+
+
+        .container {
+            text-align: center!important;
+        }
+
+
+
+
+        @media screen and (min-width: 300px) {
+            .content {
+                width: 90%;
+                margin: 0 auto;
+                margin-top: 5em;
+                margin-bottom: 10em;
+            }
+
+            .imagesize {
+                width: 100%;
+                height: auto;
+            }
+
+
+        }
+
+        @media screen and (min-width: 600px) {
+            .content {
+                width: 60%;
+                margin: 0 auto;
+                margin-top: 5em;
+                margin-bottom: 10em;
+            }
+        }
+
+        @media screen and (min-width: 1000px) {
+            .content {
+                width: 45%;
+                margin: 0 auto;
+                margin-top: 5em;
+                margin-bottom: 10em;
+            }
+        }
+        .backpage{
+            text-align: center!important;
+        }
+/*-----Download---*/
+{
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 2;
+
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 16px;
+
+
+        }
+
+
+        h4 {
+
+            font-size: 12px;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #676767;
+        }
+
+        .huge {
+            font-size: 55px;
+            color: black;
+        }
+
+
+
+
+        strong {
+            font-weight: bold;
+        }
+
+        .row {
+            text-align: left;
+
+        }
+
+        .imagesize {
+            width: 100%;
+            height: auto;
+        }
+
+        .gifsize {
+            width: 60%;
+            height: 60%;
+        }
+
+
+        . .content {
+            width: 45%;
+            margin: 0 auto;
+            margin-top: 10em;
+            margin-bottom: 10em;
+
+        }
+
+        .quote {
+            font-size: 20px;
+            margin: 2em;
+            font-weight: 400;
+            background: #f9f9f9;
+            border-left: 2px solid black;
+            padding-left: 30px;
+            font-style: italic;
+
+
+        }
+
+        .linethrough {
+            text-decoration: line-through;
+        }
+
+
+
+
+        .lgspacer {
+            padding-top: 5em;
+
+        }
+
+        .smspacer {
+            padding-top: 2em;
+
+        }
+
+        .important {
+            background-color: #F7F7F7;
+            padding: 30px;
+        }
+
+
+
+        .importantclick {
+            background-color: #F7F7F7;
+            padding: 30px;
+            text-align: center;
+            transition: background-color .5s;
+
+        }
+
+        .importantclick:hover {
+            background-color: #DDDDDD;
+            cursor: pointer;
+
+        }
+
+
+        .links {
+            color: #0278C0;
+
+        }
+        
+        
+         .link {
+            color: #0278C0 !important;
+             font-weight: bold;
+
+        }
+       
+        
+        
+
+        p i {
+            padding-right: 10px;
+            color: #4d4d4d;
+        }
+
+
+        .darklink {
+            color: #4d4d4d;
+        }
+
+
+        .figcap {
+            padding-top: 10px;
+            font-size: 12px;
+            font-weight: 400;
+            text-align: center;
+            color: dimgrey;
+
+        }
+
+        .topnav {
+            overflow: hidden;
+
+        }
+
+        .topnav a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding-left: 2em;
+            padding-top: 1em;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+
+        ul li {
+            line-height: 35px;
+        }
+
+        
+        
+        
+        .rounded {
+            border-radius: 20px;
+        }
+
+
+
+       
+        .rounded {
+            
+            border-radius: 5px;
+            -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+   
+      
+        
+        .rounded {
+          
+            -webkit-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+
+            -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, .5);
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, .5);
+
+        }
+
+        .rounded::after {
+
+
+            opacity: 0;
+            -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, .5);
+            transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, .5);
+
+        }
+
+        .rounded:hover {
+
+            -webkit-box-shadow: 2px 20px 25px 0px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 2px 20px 25px 0px rgba(0, 0, 0, 0.1);
+            box-shadow: 2px 20px 25px 0px rgba(0, 0, 0, 0.1);
+              -webkit-transform: scale(1.05, 1.05);
+            transform: scale(.98, .98);
+            
+        }
+
+
+
+        .rounded:hover::after {
+            opacity: 1;
+        }
+
+}        
+
+        
+        
+        
+        
+        
+        
+        
+
+        /*-------- NEXT BUTTOM --------*/
+
+        a {
+            text-decoration: none!important;
+            color: black;
+        }
+
+
+
+        a:hover {
+            text-decoration: none!important;
+            color: black;
+        }
+
+
+
+
+
+        a.button1 {
+            border: solid black 1px;
+            padding: 10px 25px;
+            font-size: 14px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color .5s;
+            color: inherit;
+
+
+        }
+
+        a.button1:visited {
+            color: black;
+
+        }
+
+
+        a.button1:hover {
+
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+
+
+
+        }
+        
+        
+           a.buttoncta {
+            background-color: black;
+            border: solid black 1px;
+            color: white;
+            padding: 10px 25px;
+            font-size: 14px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color .5s;
+            margin-right: .5em;
+
+
+        }
+
+
+
+
+
+
+        a.buttoncta:hover {
+
+            background-color: transparent;
+            color: black;
+            cursor: pointer;
+            border: solid black 1px;
+            text-decoration: none;
+
+
+
+
+        }
+
+
+
+
+
+
+        /*-------- FOOTER ICON BAR --------*/
+
+        .icon {
+            font-size: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+
+
+        .iconbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+        }
+
+        .iconbar i {
+            color: black;
+            transition: color .5s;
+        }
+
+        .iconbar i:hover {
+            color: darkgrey;
+        }
+
+
+        .container {
+            text-align: center!important;
+        }
+
+
+
+
+        @media screen and (min-width: 300px) {
+            .content {
+                width: 90%;
+                margin: 0 auto;
+                margin-top: 5em;
+                margin-bottom: 10em;
+            }
+
+            .imagesize {
+                width: 100%;
+                height: auto;
+            }
+
+
+        }
+
+        @media screen and (min-width: 600px) {
+            .content {
+                width: 60%;
+                margin: 0 auto;
+                margin-top: 5em;
+                margin-bottom: 10em;
+            }
+        }
+
+        @media screen and (min-width: 1000px) {
+            .content {
+                width: 45%;
+                margin: 0 auto;
+                margin-top: 5em;
+                margin-bottom: 10em;
+            }
+        }
+
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <span class="col-md-9">
+                <div class="smspacer"></div>
+                <a href="index.html">
+                    <p class="darklink"> <i class="fa fa-arrow-left darklink" aria-hidden="true"></i> <span>Back to Home</span></p>
+            </a>
+            <div class="smspacer"></div>
+            <h1 class="huge">Chiguru CoLab Branding</p></h1>
+            <div class="smspacer"></div>
+            </span>
+        </div>
+    </div>
+    <span class="col-md-12"> 
+            <figure>
+                <img src="images/chiguru/Chiguru-Logo-01.jpg" class="imagesize">
+                <figcaption class="figcap"><strong>Disclaimer:</strong> Logo design for Chiguru CoLab.</figcaption>
+            </figure>    
+    </span>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <span class="col-md-9">    
+            <div class="smspacer"></div>
+            <div class="important">
+                <h4>Project Scope:</h4>
+                <ul>
+                    <li><strong>My Role: </strong> Designer </li>
+                    <li><strong>Tools:</strong> Adobe Illustrator, Adobe Photoshop </li>
+                    <li><strong>Timeline:</strong> September 2020</li>
+                    <li><strong>Deliverables:</strong> Logo </li>
+                    <li><strong>Team:</strong> Me, Anu and Athithya </li>
+                </ul>
+            </div>
+            <div class="lgspacer"></div>
+            <h1 >Introduction</h1>
+            <p>Chiguru Technologies is a worker co-operative established to pursue the idea of knowledge freedom, building technological services and solutions. </p>
+            <a href="images/chiguru/Chiguru-Logo-Manual.pdf" class="buttoncta" target="_blank"> View full overview design</a>
+            <div class="smspacer"></div>
+                <a data-fancybox="gallery" href="images/chiguru/Chiguru-Logo-02.jpg"><img src="images/chiguru/Chiguru-Logo-02.jpg" class="imagesize"></a>
+                <a data-fancybox="gallery" href="images/chiguru/Chiguru-Logo-03.jpg"><img src="images/chiguru/Chiguru-Logo-03.jpg" class="imagesize"></a>
+                <a data-fancybox="gallery" href="images/chiguru/Chiguru-Logo-04.jpg"><img src="images/chiguru/Chiguru-Logo-04.jpg" class="imagesize"></a>
+                <a data-fancybox="gallery" href="images/chiguru/Chiguru-Logo-05.jpg"><img src="images/chiguru/Chiguru-Logo-05.jpg" class="imagesize"></a>
+            <div class="lgspacer"></div>
+        </div>
+    </div>
+    <div class="lgspacer"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+</body>
+
+   <footer>
+          <div class="backpage">
+            <a href="index.html">
+                <p><i class="fa fa-arrow-right darklink" aria-hidden="true"></i>Back to <strong> Homepage </strong></p>
+            </a>
+        </div>
+        <div class="lgspacer"></div>
+        <div class="container">
+            <div class="iconbar">
+                <ul>
+                <a href="https://www.linkedin.com/in/themanikantan" target="_blank"><i class="fab fa-linkedin-in icon"></i></a>
+                <a href="https://dribbble.com/manikantan" target="_blank"><i class="fab fa-dribbble icon"></i></a>
+                <a href="https://medium.com/@themanikantan" target="_blank"><i class="fab fa-medium icon"></i></a>
+                <a href="https://www.instagram.com/themanikantan" target="_blank"><i class="fab fa-instagram icon"></i></a>
+                <a href="https://twitter.com/themanikantan" target="_blank"><i class="fab fa-twitter icon"></i></a>
+                </ul>
+                <div class="smspacer"></div>
+            </div>
+            <p class="figcap">&#169; 2020. All rights reserved</p>
+        </div>
+        <div class="smspacer"></div>
+    </footer>
+</html>
